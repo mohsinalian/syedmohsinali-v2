@@ -137,6 +137,15 @@
     width: max-content;
     margin: auto;
   }
+
+  /*  */
+  .loading {
+    height: 100vh;
+  }
+  .loading img {
+    height: 150px;
+  }
+  /*  */
 }
 
 @media (max-width: 550px) {

@@ -1,4 +1,11 @@
 @media only screen and (max-width: 790px) {
+  .nav {
+    padding-top: 5px;
+  }
+  .logo {
+    height: 50px;
+  }
+
   .nav-links {
     display: none;
   }
@@ -9,9 +16,9 @@
   }
   .hamburger div {
     height: 1px;
-    width: 40px;
+    width: 28px;
     background-color: #d9d9d9;
-    margin: 8px;
+    margin: 7px;
   }
 
   /* 
@@ -153,9 +160,11 @@
   .gear {
     height: 43px;
   }
+
+  /*  */
   .project {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr 1fr;
     color: #1d1d1d;
     padding: 20px;
     margin-top: 20px;
@@ -168,21 +177,21 @@
     margin-left: 15px;
   }
   .name {
-    font-size: 3rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
   .date {
-    font-size: 3.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: auto;
   }
   .about-title {
-    font-size: 18px;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-top: 15px;
   }
   .product-about {
-    font-size: 15px;
+    font-size: 0.6rem;
     margin-top: 5px;
     color: #555555;
   }
@@ -192,8 +201,8 @@
     margin-top: 30px;
 
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
     border: none;
     background-color: #1d1d1d;
     transition: 0.5s;
@@ -204,11 +213,11 @@
   .arrow {
     padding: 0;
     color: rgb(216, 216, 216);
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .go-to-project-btn:hover {
-    width: 90px;
-    height: 90px;
+    width: 35px;
+    height: 35px;
   }
 
   /* section about */

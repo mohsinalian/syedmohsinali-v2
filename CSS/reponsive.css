@@ -172,7 +172,7 @@
   /*  */
   .project {
     display: grid;
-    grid-template-columns: 35px 1fr 1fr;
+    grid-template-columns: 30px 120px 1fr;
     color: #1d1d1d;
     padding: 20px;
     margin-top: 20px;
@@ -195,12 +195,12 @@
     margin: auto;
   }
   .about-title {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-top: 15px;
   }
   .product-about {
-    font-size: 0.4em;
+    font-size: 0.7em;
     margin-top: 5px;
     color: #555555;
   }

@@ -9,6 +9,27 @@ window.addEventListener("load", function () {
   main.classList.remove("hidden");
 });
 
+//
+//
+
+function detectBrowser() {
+  let userAgent = navigator.userAgent;
+
+  if (userAgent.includes("Firefox")) {
+    return;
+  } else if (
+    userAgent.includes("Safari") &&
+    !userAgent.includes("Chrome") &&
+    !userAgent.includes("Chromium")
+  ) {
+    return;
+  } else {
+    return "auto-blur";
+  }
+}
+
+//
+//
 // project loader
 const projectContainer = document.querySelector(".projects-container");
 console.log(projectContainer);
@@ -64,7 +85,7 @@ const allProjects = [
 ];
 
 allProjects.forEach((project) => {
-  const html = ` <div class="project auto-blur">
+  const html = ` <div class="project ${detectBrowser()}">
           <div class="date">${project.year}</div>
           <div class="info">
             <div>
@@ -75,14 +96,18 @@ allProjects.forEach((project) => {
               </p>
             
             </div>
-           <a class='project-link' href="${project.link}"> <button class="go-to-project-btn">
+           <a class='project-link' href="${
+             project.link
+           }"> <button class="go-to-project-btn">
               <span class="arrow">&#8599;</span>
             </button></a
               >
           </div>
 
           <div>
-            <img loading="lazy" class="pic" src="${project.pic}" alt="${project.name}" />
+            <img loading="lazy" class="pic" src="${project.pic}" alt="${
+    project.name
+  }" />
           </div>
 
         
@@ -118,7 +143,9 @@ const menuBtn = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const m1 = document.querySelector(".m1");
 const m2 = document.querySelector(".m2");
+
 const menuCloseBtn = document.querySelector(".close-menu-btn");
+const aboutBtn = document.querySelector(".about-btn");
 menuBtn.addEventListener("click", function () {
   // menu.classList.remove("hidden");
   // m1.classList.remove("hidden");
@@ -132,3 +159,9 @@ menuCloseBtn.addEventListener("click", function () {
   m1.style.left = "100%";
   m2.style.left = "100%";
 });
+aboutBtn.addEventListener("click", function () {
+  menu.style.left = "100%";
+  m1.style.left = "100%";
+  m2.style.left = "100%";
+});
+//

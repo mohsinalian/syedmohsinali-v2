@@ -355,8 +355,8 @@ animations
   0% {
     filter: blur(30px);
   }
-  45%,
-  55% {
+  40%,
+  60% {
     filter: blur(0px);
   }
   100% {
